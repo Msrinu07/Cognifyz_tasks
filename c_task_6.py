@@ -1,11 +1,10 @@
 import random
-target_number=random.randint(1,100)
-#attempts=0
 def guess():
+    target_number=random.randint(1,100)
     attempts = 0
     print("Welcome to Number Guessing Game")
     print("I am thinking of a number between 1 to 100")
-    while True:
+   while True:
         try:
             num=int(input('Enter your Guess'))
             attempts+=1
@@ -22,9 +21,14 @@ def guess():
                 break
         except:
             print("please enter a valid number")
-play_again=input("Do you want to play agian (y|n)").lower()
-if play_again == "y":
-    guess()
-else:
-    print("thanks for playing goodbye")
-
+   while True:
+        play_again=input("Do you want to play agian (y|n)").lower()
+        if play_again in ["yes" ,"no"]
+            break
+        else:
+            print("Please Enter in Yes or no")
+   if play_again == "y":
+        guess()
+   else:
+        print("thanks for playing goodbye")
+guess()
